@@ -27,12 +27,13 @@ body, html {height: 100%}
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <?php
     $i = 1 ;
-    $ran = mt_rand(1,100) ;
+    $ran = mt_rand(1,10) ;
     $FH = fopen("obits.txt","r") ;
     while ( !feof($FH) ) {
       $content = fgets($FH,4096) ;
+      echoe $i
       if ( $ran == $i ) {
-        echo "<p class=\"w3-large w3-center\">". $content. "</p>";
+        echo "<p class=\"w3-large w3-center\">" .$content. "</p>";
       }
       $i++ ;
     }
