@@ -26,18 +26,6 @@ body, html {height: 100%}
     <h1 class="w3-jumbo w3-animate-top"> Our servers are sad! </h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
    
-    <?php
-    $i = 1 ;
-    $ran = mt_rand(1,100) ;
-    $FH = fopen("obits_edited.txt","r") ;
-    while ( !feof($FH) ) {
-      $content = fgets($FH,4096) ;
-      if ( $ran == $i ) {
-        echo '<p class=\"w3-large w3-center\">' .$content. '</p>';
-      }
-      $i++ ;
-    }
-    ?>
     
     <p class="w3-large w3-center"> We didn't expect this site to be nearly this popular and our servers keep crashing. Sorry about this. I am making a few changes to support the increase in traffic. For updates on the site, please visit joshurbandavis.com or follow me on twitter/instagram: @kweenofparts</p>
   </div>
@@ -45,6 +33,5 @@ body, html {height: 100%}
     
   </div>
 </div>
-
 </body>
 </html>
