@@ -3,7 +3,7 @@
 /////////////////////////////////////////////////////////////////////
 // This is the only portion of the code you may need to change.
 // Indicate the location of your images 
-$root = '';
+$root = '/fauxbituary/';
 // use if specifying path from root
 //$root = $_SERVER['DOCUMENT_ROOT'];
 
@@ -61,9 +61,10 @@ body, html {height: 100%}
   <div class="w3-display-topleft w3-padding-large w3-xlarge">   
   </div>
   <div class="w3-display-middle">
+   <div> <img src="<?php echo $path . $img ?>" alt="" /> </div>
     <h1 class="w3-jumbo w3-animate-top"> Our servers are sad! </h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <img src="<?php echo $path . $img ?>" alt="" />
+    
     <p class="w3-large w3-center"> We didn't expect this site to be nearly this popular and our servers keep crashing. Sorry about this. I am making a few changes to support the increase in traffic. For updates on the site, please visit joshurbandavis.com or follow me on twitter/instagram: @kweenofparts</p>
   </div>
   <div class="w3-display-bottomleft w3-padding-large">
